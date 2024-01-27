@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/736x/0e/f9/e8/0ef9e86bf862ddcfab5e33846279747b.jpg') center/cover no-repeat fixed;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 400px;
+    padding: 0px 10px;
+}
+
+/* CSS */
+button {
+    appearance: none;
+    background-color: white;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform;
+    margin: 10px;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Entrance animation for Modal 1 */
+#modal1.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Entrance animation for Modal 2 */
+#modal2.slideDown {
+    animation-name: slideDown;
+}
+
+/* Entrance animation for Modal 3 */
+#modal3.zoomIn {
+    animation-name: zoomIn;
+}
+
+/* Entrance animation for Modal 4 */
+#modal4.rotateIn {
+    animation-name: rotateIn;
+}
+
+/* Entrance animation for Modal 5 */
+#modal5.bounceIn {
+    animation-name: bounceIn;
+}
+
+/* Entrance animation for Modal 6 */
+#modal6.flipInX {
+    animation-name: flipInX;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(-50%, -70%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: translate(-50%, -50%) rotate(-180deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+}
+
+@keyframes bounceIn {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate(-50%, -50%) scaleY(0.9);
+    }
+
+    50%,
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate(-50%, -50%) scaleY(1.1);
+    }
+
+    90% {
+        transform: translate(-50%, -50%) scaleY(0.95);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scaleY(1);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        transform: translate(-50%, -50%) perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) perspective(400px) rotateX(0);
+        opacity: 1;
+    }
+}

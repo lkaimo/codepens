@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Text Animation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: url('https://i.pinimg.com/originals/d7/fc/c2/d7fcc277bfcd382a006ed1ddbb46e71e.jpg') center/cover no-repeat;
+      background-color: rgba(40, 44, 52, 0.8);
+      /* Shaded overlay */
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .animated-text {
+      margin-right: 20px;
+    }
+
+    .text-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      padding: 10px;
+    }
+
+    .text-container .animated-text {
+      font-size: 2em;
+      animation: pulse 4s infinite, rotate 3s infinite;
+    }
+
+    .text-container .animated-text2 {
+      font-size: 2em;
+      animation: pulse 4s infinite;
+    }
+
+    .text-container .another-text {
+      font-size: 2em;
+      animation: shake 2s infinite;
+    }
+
+    .text-container .yet-another-text {
+      font-size: 2em;
+      animation: fadeInOut 3s infinite;
+    }
+
+    .text-container .new-text {
+      font-size: 2em;
+      animation: bounce 2s infinite;
+    }
+
+    .text-container .extra-text {
+      font-size: 2em;
+      animation: colorChange 5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #61dafb;
+      }
+
+      50% {
+        color: #ff6347;
+      }
+
+      100% {
+        color: #61dafb;
+      }
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-5px);
+      }
+
+      50% {
+        transform: translateX(5px);
+      }
+
+      75% {
+        transform: translateX(-5px);
+      }
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-container">
+    <div class="animated-text2">Animation</div>
+    <div class="another-text">Another Animation</div>
+    <div class="animated-text">Stylish Animation</div>
+    <div class="yet-another-text">Yet Another Animation</div>
+    <div class="new-text">New Animation</div>
+    <div class="extra-text">Extra Animation</div>
+  </div>
+</body>
+
+</html>

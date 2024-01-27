@@ -1,0 +1,355 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /*background-color: #000000;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/originals/f4/0f/83/f40f83f688ac49ecba834c6f20c43761.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+/*Title Animation */
+@keyframes scaleAnimationG {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationE {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationN {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationT {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationI {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationF {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationY {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    60% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 span {
+    display: inline-block;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+.animated-letter:nth-child(1) {
+    animation-name: scaleAnimationG;
+}
+
+.animated-letter:nth-child(2) {
+    animation-name: scaleAnimationE;
+}
+
+.animated-letter:nth-child(3) {
+    animation-name: scaleAnimationN;
+}
+
+.animated-letter:nth-child(4) {
+    animation-name: scaleAnimationT;
+}
+
+.animated-letter:nth-child(5) {
+    animation-name: scaleAnimationI;
+}
+
+.animated-letter:nth-child(6) {
+    animation-name: scaleAnimationF;
+}
+
+.animated-letter:nth-child(7) {
+    animation-name: scaleAnimationY;
+}
+
+/*End of title Animation */
+label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #eeff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+*/
+
+.search-container {
+    color: #eeff00;
+    text-align: center;
+    width: 90%;
+    max-width: 800px
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    /*
+    border: 1px solid #ccc;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    */
+    background-color: #111;
+    /*background: linear-gradient(to bottom, #111111, #000000); /**/
+    width: 90%;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+p.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.song-details-card {
+    display: flex;
+    color: white;
+    /*
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    */
+    overflow: hidden;
+    max-width: 800px;
+    text-align: center;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    padding-right: 20px;
+    align-items: center;
+    overflow: hidden;
+    animation: slideFromLeft 1s ease-out;
+    /* Animation properties go here */
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.song-art-image {
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    border-radius: 40px;
+}
+
+.details-container {
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #1DB954, #103022);
+    animation: slideFromRight 1s ease-out;
+    /* Animation properties go here */
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.row.center-both {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    /* Set a maximum width for the container */
+}
+
+.artist-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    flex-grow: 0;
+    /* Do not allow the image to grow beyond its intrinsic size */
+}
+
+.song-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    flex-grow: 1;
+    /* Allow the title to grow and fill the available space */
+    word-wrap: break-word;
+    /* Allow long words to break onto the next line */
+}
+
+
+.song-info {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.details-container a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.details-container a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #result,
+    .search-container {
+        max-width: 85%;
+        /* Adjust the width for smaller screens */
+    }
+
+    .song-details-card {
+        flex-direction: column;
+    }
+
+    .image-container {
+        order: 1;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+    }
+
+    .details-container {
+        order: 2;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.spotify-embed iframe {
+    width: 100%;
+    height: 90px;
+    margin-top: 20px;
+}

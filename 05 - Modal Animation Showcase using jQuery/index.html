@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popups with Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal fadeIn">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Modal 1</h2>
+        <p>This is the content of Modal 1.</p>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal slideDown">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Modal 2</h2>
+        <p>This is the content of Modal 2.</p>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal zoomIn">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the content of Modal 3.</p>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal rotateIn">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Modal 4</h2>
+        <p>This is the content of Modal 4.</p>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal bounceIn">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Modal 5</h2>
+        <p>This is the content of Modal 5.</p>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal flipInX">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <h2>Modal 6</h2>
+        <p>This is the content of Modal 6.</p>
+    </div>
+
+    <div class="container">
+        <h1>Modal Animations</h1>
+        <!-- Button to open Modal 1 -->
+        <button onclick="openModal('modal1')">Modal Animation 1</button>
+
+        <!-- Button to Modal Animation 2 -->
+        <button onclick="openModal('modal2')">Modal Animation 2</button>
+
+        <!-- Button to Modal Animation 3 -->
+        <button onclick="openModal('modal3')">Modal Animation 3</button>
+
+        <!-- Button to Modal Animation 4 -->
+        <button onclick="openModal('modal4')">Modal Animation 4</button>
+
+        <!-- Button to Modal Animation 5 -->
+        <button onclick="openModal('modal5')">Modal Animation 5</button>
+
+        <!-- Button to Modal Animation 6 -->
+        <button onclick="openModal('modal6')">Modal Animation 6</button>
+
+        <p>©:<a style="color: inherit" href="https://getcssscan.com/css-buttons-examples" target="_blank">getcssscan.com</a> (Button 28)
+        </p>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

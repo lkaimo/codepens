@@ -1,0 +1,149 @@
+/*
+body {
+  background: rgb(218, 57, 127);
+  background: radial-gradient(circle, rgba(218, 57, 127, 1) 0%, rgba(233, 148, 213, 1) 100%);
+}
+*/
+body{
+background-image: url('https://i.pinimg.com/originals/0e/3c/44/0e3c440863bc1ab6914109524bdce4ec.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: center;
+}
+
+h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: bounceIn 2.0s ease-out forwards infinite;
+}
+
+@keyframes bounceIn {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/*
+.title-and-search{
+  text-align: center;
+  align-self: flex-start; 
+  margin-bottom: 0;
+}
+*/
+.title-and-search {
+  text-align: center;
+  padding: 30px 30px;
+  margin: 20px 10px;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+  /* Set a background color if needed */
+  z-index: 100;
+  /* Set a z-index to control stacking order */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media0.giphy.com/media/aZmD30dCFaPXG/giphy.gif?cid=ecf05e47o2p7pmni6ppalztvhs95nwsb33ocs6rj4i3k2q86&ep=v1_gifs_search&rid=giphy.gif&ct=g') center/cover;
+  border-radius: 50px;
+  color: white;
+}
+
+.title-and-search input {
+  margin-top: 10px;
+  padding: 3px;
+  border-radius: 10px;
+  height: 25px;
+  border: 3px solid black;
+}
+
+.title-and-search img {
+  margin-top: 20px;
+  border-radius: 55%;
+  border: 5px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    /* Change to a column layout for smaller screens */
+    text-align: center;
+    /* Center text within the column */
+  }
+
+  .title-and-search {
+    align-self: center;
+    position: static;
+  }
+}
+
+#placeholder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-inline: 10px;
+  color: white;
+  backdrop-filter: blur(2px) saturate(37%);
+  -webkit-backdrop-filter: blur(2px) saturate(37%);
+  background-color: rgba(0, 0, 0, 0.48);
+  border-radius: 20px;
+  margin: 20px 10px;
+}
+
+
+#placeholder img {
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid;
+  width: 425px;
+}
+
+#result {
+  text-align: left;
+  padding: 0 30px;
+  color: white;
+  backdrop-filter: blur(2px) saturate(37%);
+  -webkit-backdrop-filter: blur(2px) saturate(37%);
+  background-color: rgba(0, 0, 0, 0.48);
+  border-radius: 50px;
+  margin: 20px 10px;
+}
+
+h1,
+#form {
+  align-self: flex-start;
+  /* Align the h1 to the start (top) of the flex container */
+  margin-bottom: 0;
+  /* Remove any default margin that might affect the position */
+}

@@ -1,0 +1,224 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #eeff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    /*
+    border: 1px solid #ccc;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    */
+    background-color: #111;
+    /*background: linear-gradient(to bottom, #111111, #000000); /**/
+    max-width: 800px;
+    width: 100%; 
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: block;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.song-details-card {
+    display: flex;       
+    color: white;
+    /*
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    */
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-right: 20px;
+    align-items: center;
+    overflow: hidden;
+animation: slideFromLeft 1s ease-out; /* Animation properties go here */
+}
+
+@keyframes slideFromLeft {
+from {
+transform: translateX(-100%);
+}
+to {
+transform: translateX(0);
+}
+}
+
+.song-art-image {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 8px;
+    display: block;
+    border-radius: 8px;
+}
+
+.details-container {
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #303011, #181809);
+animation: slideFromRight 1s ease-out; /* Animation properties go here */
+}
+
+@keyframes slideFromRight {
+from {
+transform: translateX(100%);
+}
+to {
+transform: translateX(0);
+}
+}
+
+.row.center-both {
+    display: flex; justify-content: center;
+    flex-wrap: wrap;      
+    flex-direction: column;      
+    text-align: center;
+    align-items: center;         
+    margin-bottom: 20px;
+    max-width: 800px; /* Set a maximum width for the container */
+}
+
+.artist-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-grow: 0; /* Do not allow the image to grow beyond its intrinsic size */
+}
+
+.song-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    flex-grow: 1; /* Allow the title to grow and fill the available space */
+    word-wrap: break-word; /* Allow long words to break onto the next line */
+}
+
+
+.song-info {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.details-container a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.details-container a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #result {
+        max-width: 90%; /* Adjust the width for smaller screens */
+    }
+
+    .song-details-card {
+        flex-direction: column;
+        
+    }
+
+    .image-container {
+
+        order: 1;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+    .details-container {
+        order: 2;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-radius: 8px;
+    }
+}
+
+/* Updated styles for the responsive container */
+@media only screen and (max-width: 600px) {
+    div {
+        width: 90%; /* Adjust the width for smaller screens */
+        padding: 9px; /* Reduce padding for smaller screens */
+    }
+
+    button {
+        padding: 5px 9px; /* Adjust button padding for smaller screens */
+    }
+}       

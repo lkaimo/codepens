@@ -1,0 +1,112 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/originals/f7/eb/e1/f7ebe1cadcd7fb3d3d4c0f8cbb310734.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fceca3;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #94b4d3;
+  }
+
+  50% {
+    color: #fceca3;
+  }
+
+  100% {
+    color: #94b4d3;
+  }
+}
+
+.accordion {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.accordion li {
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.accordion li a .plus {
+  margin-left: 10px;
+}
+
+.accordion li div {
+  padding: 10px;
+  color: white;
+  display: none;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.39);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.step5code {
+  background-color: black;
+  color: white;
+  /* Set text color to white for better visibility */
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  /* Use a monospaced font for better alignment */
+}
+
+.step5code p {
+  margin: 0;
+  /* Remove default margin for paragraphs */
+}
+
+.comment {
+  color: gray;
+}
+
+.keyword-def {
+  color: blue;
+}
+
+.function-name {
+  color: red;
+}
+
+.function-call {
+  color: orange;
+}
+
+.string {
+  color: green;
+}
+
+.center-image {
+  text-align: center;
+}
+
+.center-image img {
+  display: block;
+  margin: 0 auto;
+  /* Center horizontally */
+}

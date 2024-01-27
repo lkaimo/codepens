@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+  }
+
+  
+  .accordion {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .accordion li {
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .accordion li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+
+  .accordion li a .plus {
+    margin-left: 10px;
+  }
+
+  .accordion li div {
+    padding: 10px;
+    display: none;
+  }
+
+  .step5code {
+    background-color: black;
+    color: white;
+    /* Set text color to white for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    /* Use a monospaced font for better alignment */
+  }
+
+  .step5code p {
+    margin: 0;
+    /* Remove default margin for paragraphs */
+  }
+
+  .comment {
+    color: gray;
+  }
+
+  .keyword-def {
+    color: blue;
+  }
+
+  .function-name {
+    color: red;
+  }
+
+  .function-call {
+    color: orange;
+  }
+
+  .string {
+    color: green;
+  }
+
+  .center-image {
+    text-align: center;
+  }
+
+  .center-image img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+  }
