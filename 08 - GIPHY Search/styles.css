@@ -1,0 +1,68 @@
+body {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/originals/9d/69/d8/9d69d814729dbb5f4bae42f76e6495d0.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+#gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gif {
+    margin: 10px;
+    border: solid 2px;
+}
+
+@media (max-width: 600px) {
+    #gif-container {
+        padding: 10px;
+    }
+
+    .gif {
+        max-width: 70%;
+        height: auto;
+    }
+}
+
+input {
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.title-searchbar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.title-searchbar img {
+    padding: 20px;
+    animation: zoomInOut 2s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
