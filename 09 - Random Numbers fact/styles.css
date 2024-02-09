@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#title{
+    font-family: "Kumar One", cursive;
+}
+
+
+.search-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+.search-container input {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.num-type {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.num-type:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.random-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.random-container button {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.random-container button:hover {
+    cursor: pointer;
+    background-color: #bcff02;
+    /* Background color on hover */
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .random-container button {
+        width: 180px;
+        height: auto;
+    }
+}
+
+.random-container button img {
+    height: 50px;
+    width: 50px;
+}
+
+#factResult{
+    background-color: black;
+    color: white;
+}
+
+.randomfact {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
