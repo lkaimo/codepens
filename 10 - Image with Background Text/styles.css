@@ -1,0 +1,42 @@
+body{
+    background: #111;
+    text-align: center;
+}
+.image    
+{   
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/3d/b5/ed/3db5ede627fdd695056bf039d7c6d309.png); /* Here choose your photo */
+    width: 100%;  /* Adjust your width of the image*/
+    height: auto;   /* Adjust your  height of the image*/
+    background-repeat: no-repeat ;
+    background-position: center;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute; /* Position the overlay text absolutely */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the text */
+    z-index: 2; /* Ensure the text appears above the background text */
+    font-size: 24px; /* Adjust the font size */
+    color: rgb(238, 255, 0);
+}
+
+#credits {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px;
+}
