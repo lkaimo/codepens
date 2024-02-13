@@ -1,0 +1,215 @@
+body {
+    background: #111;
+    text-align: center;
+}
+
+#title img {
+    height: 90px;
+    width: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#container #ig_logo {
+    height: 25px;
+    width: auto;
+}
+
+@media (max-width:1000px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+.yunjin {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/b9/aa/91/b9aa91f7e4954e279054392a489d684f.jpg);
+    /* Here choose your photo */
+    width: 400px;
+    /* Adjust your width of the image*/
+    height: 500px;
+    /* Adjust your  height of the image*/
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    border-top: solid 3px #FDB927;
+    border-bottom: solid 3px #552583;
+    margin-bottom: 20px;
+}
+
+.chaewon {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/22/95/30/229530ba9d471d0d44106ad2baabe851.jpg);
+    /* Here choose your photo */
+    width: 400px;
+    /* Adjust your width of the image*/
+    height: 500px;
+    /* Adjust your  height of the image*/
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    border-top: solid 3px #FDB927;
+    border-bottom: solid 3px #552583;
+    margin-bottom: 20px;
+}
+
+.sakura {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/44/e8/44/44e8444b414fc43510f203c8b106099f.jpg);
+    /* Here choose your photo */
+    width: 400px;
+    /* Adjust your width of the image*/
+    height: 500px;
+    /* Adjust your  height of the image*/
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    border-top: solid 3px #FDB927;
+    border-bottom: solid 3px #552583;
+    margin-bottom: 20px;
+}
+
+.eunchae {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/00/bf/cd/00bfcd693b41afd20cbfaf0a3696f05b.jpg);
+    /* Here choose your photo */
+    width: 400px;
+    /* Adjust your width of the image*/
+    height: 500px;
+    /* Adjust your  height of the image*/
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    border-top: solid 3px #FDB927;
+    border-bottom: solid 3px #552583;
+    margin-bottom: 20px;
+}
+
+
+.kazuha {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/fe/ef/a2/feefa23ba2cb21762c0e9e62ff645a6a.jpg);
+    /* Here choose your photo */
+    width: 400px;
+    /* Adjust your width of the image*/
+    height: 500px;
+    /* Adjust your  height of the image*/
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-inline: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 9, 9, 0);
+    border-top: solid 3px #FDB927;
+    border-bottom: solid 3px #552583;
+    margin-bottom: 20px;
+}
+
+.yunjin,
+.chaewon,
+.eunchae,
+.sakura,
+.kazuha {
+    transition: transform 0.5s ease;
+}
+
+.yunjin:hover,
+.chaewon:hover,
+.eunchae:hover,
+.sakura:hover,
+.kazuha:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-clip: border-box;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+    .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin: auto;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .logos #le_sserafim_logo {
+        margin-inline: auto;
+    }
+
+    .logos #lakers_logo {
+        margin-inline: auto;
+    }
+}
+
+.logos #le_sserafim_logo {
+    width: 291px;
+    height: 180px;
+}
+
+.logos h2 {
+    font-size: 3em;
+    margin-block: auto;
+}
+
+.logos #lakers_logo {
+    margin-top: 10px;
+    width: 291px;
+    height: 180px;
+}
+
+#credits {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px;
+}
